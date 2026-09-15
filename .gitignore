@@ -1,0 +1,24 @@
+# Fichiers systeme
+Thumbs.db
+desktop.ini
+.DS_Store
+
+# Fichiers temporaires Screenpresso
+Originals/
+Thumbnails/
+
+# Machines virtuelles (ne jamais versionner : plusieurs dizaines de Go)
+*.vmdk
+*.vmx
+*.nvram
+*.vmsd
+*.vmsn
+*.vmem
+*.vmss
+
+# Images systeme
+*.iso
+
+# Archives
+*.zip
+*.7z
