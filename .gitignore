@@ -22,3 +22,15 @@ Thumbnails/
 # Archives
 *.zip
 *.7z
+
+# Secrets : ne jamais publier
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.pfx
+*.p12
+id_rsa*
+id_ed25519*
+*.kdbx

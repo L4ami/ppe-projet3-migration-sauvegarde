@@ -6,7 +6,7 @@ Migration d'un poste de travail **Windows 10 Professionnel** vers **Windows 11 P
 |---|---|
 | **Module** | PPE IT Essentials — CFC 187 |
 | **Classe** | E1B — Geneva Institute of Technology |
-| **Technicien** | P.G |
+| **Technicien** | Paul Giocanti |
 | **Date** | 15 septembre 2026 |
 | **Poste** | `PC01-PG` |
 
@@ -119,4 +119,4 @@ Même verdict, mais cette fois entre l'inventaire d'origine et les données reve
 
 ---
 
-*P.G — PPE IT Essentials 187, classe E1B — septembre 2026*
+*Paul Giocanti, PPE IT Essentials 187, classe E1B, septembre 2026*
