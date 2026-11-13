@@ -1,24 +1,34 @@
-# PPE Projet 3 — Migration et sauvegarde d'un poste existant
+# 💾 Migration de Windows 10 vers Windows 11, avec preuve d'intégrité des données
 
-Migration d'un poste de travail **Windows 10 Professionnel** vers **Windows 11 Professionnel 24H2**, avec sauvegarde des données et **vérification d'intégrité démontrée par empreintes SHA-256**.
+![Windows 10](https://img.shields.io/badge/Windows_10-Pro-0078D4?logo=windows&logoColor=white)
+![Windows 11](https://img.shields.io/badge/Windows_11_Pro-24H2-0078D4?logo=windows&logoColor=white)
+![PowerShell](https://img.shields.io/badge/PowerShell-scripts-5391FE?logo=powershell&logoColor=white)
+![SHA-256](https://img.shields.io/badge/int%C3%A9grit%C3%A9-SHA--256-2EA44F)
+![VMware](https://img.shields.io/badge/VMware_Workstation-Pro-607078?logo=vmware&logoColor=white)
+![Statut](https://img.shields.io/badge/statut-termin%C3%A9-brightgreen)
+
+> **En une phrase :** j'ai migré un poste de Windows 10 vers Windows 11 en sauvegardant les données de l'utilisateur, et j'ai **prouvé** par des empreintes SHA-256 calculées par mes scripts PowerShell que les 11 fichiers restaurés étaient identiques à l'octet près.
+
+Ce dépôt est écrit pour être compris **même sans rien connaître** à la migration de postes : tous les mots techniques sont expliqués.
+👉 Le rapport d'intervention complet est dans [`rapport-technique.md`](rapport-technique.md), et le mode opératoire réutilisable dans [`procedure-migration.md`](procedure-migration.md).
+
+> **Projet 3/5** du PPE IT Essentials, module CFC 187 *« Mettre en service un poste de travail ICT avec le système d'exploitation »*, classe E1B, Geneva Institute of Technology (GIT), septembre 2026.
 
 | | |
 |---|---|
-| **Module** | PPE IT Essentials — CFC 187 |
-| **Classe** | E1B — Geneva Institute of Technology |
 | **Technicien** | Paul Giocanti |
 | **Date** | 15 septembre 2026 |
 | **Poste** | `PC01-PG` |
 
 ---
 
-## Le problème
+## 🎯 Le problème
 
 Un poste sous Windows 10 ne reçoit plus de correctifs de sécurité depuis octobre 2025. Il doit être migré vers Windows 11. L'utilisateur doit retrouver ses fichiers et son environnement.
 
 La difficulté n'est pas la réinstallation — elle est automatisée et prend trente minutes. La difficulté est de **prouver** que les données restaurées sont identiques aux originales. « J'ai regardé, les fichiers sont là » n'est pas une preuve.
 
-## La méthode
+## 🧪 La méthode
 
 Une **empreinte SHA-256** est calculée pour chaque fichier à trois moments : avant la sauvegarde, après la copie sur le support, et après la restauration sur le système réinstallé. Un script de comparaison confronte les inventaires et rend un verdict calculé.
 
@@ -33,7 +43,7 @@ La comparaison décisive oppose l'état **d'avant l'effacement du disque** à l'
 
 ---
 
-## Résultats
+## ✅ Résultats
 
 | Indicateur | Valeur |
 |---|---|
@@ -48,7 +58,7 @@ La comparaison décisive oppose l'état **d'avant l'effacement du disque** à l'
 
 ---
 
-## Contenu du dépôt
+## 📁 Contenu du dépôt
 
 | Fichier | Description |
 |---|---|
@@ -81,7 +91,7 @@ Les deux premiers sont entièrement paramétrés et ne contiennent aucun chemin 
 
 ---
 
-## Les deux preuves centrales
+## 🔍 Les deux preuves centrales
 
 ### Intégrité de la sauvegarde
 
@@ -97,7 +107,7 @@ Même verdict, mais cette fois entre l'inventaire d'origine et les données reve
 
 ---
 
-## Points techniques notables
+## ⚠️ Points techniques notables
 
 **Le chemin relatif n'est pas un détail.** La lettre du support de sauvegarde est passée de `E:` à `D:` après la réinstallation, Windows attribuant les lettres dans l'ordre de détection. Un inventaire en chemins absolus aurait signalé 11 écarts sur 11 fichiers intacts.
 
@@ -109,14 +119,17 @@ Même verdict, mais cette fois entre l'inventaire d'origine et les données reve
 
 ---
 
-## Projets liés
+## 🔗 Les 5 projets du PPE IT Essentials
 
-| Projet | Dépôt |
-|---|---|
-| Projet 1 — Poste de travail pour un cabinet comptable | [`ppe-projet1-cabinet-comptable`](https://github.com/L4ami/ppe-projet1-cabinet-comptable) |
-| Projet 2 — Poste multi-utilisateurs en salle informatique | [`ppe-projet2-salle-informatique`](https://github.com/L4ami/ppe-projet2-salle-informatique) |
-| **Projet 3 — Migration et sauvegarde** | *ce dépôt* |
+| Projet | Sujet | Dépôt |
+|---|---|---|
+| 1/5 | Poste de travail pour un cabinet comptable | [`ppe-projet1-cabinet-comptable`](https://github.com/L4ami/ppe-projet1-cabinet-comptable) |
+| 2/5 | Poste multi-utilisateurs en salle informatique | [`ppe-projet2-salle-informatique`](https://github.com/L4ami/ppe-projet2-salle-informatique) |
+| 3/5 | Migration et sauvegarde d'un poste | **ce dépôt** |
+| 4/5 | Dépannage et diagnostic d'un poste en panne | [`ppe-projet4-depannage-diagnostic`](https://github.com/L4ami/ppe-projet4-depannage-diagnostic) |
+| 5/5 | Déploiement standardisé d'un poste | [`ppe-projet5-deploiement-image-systeme`](https://github.com/L4ami/ppe-projet5-deploiement-image-systeme) |
 
 ---
 
-*Paul Giocanti, PPE IT Essentials 187, classe E1B, septembre 2026*
+**Auteur :** Paul Giocanti ([@L4ami](https://github.com/L4ami)) · Septembre 2026<br>
+CFC d'informaticien + Bachelor (double certification) · Geneva Institute of Technology
