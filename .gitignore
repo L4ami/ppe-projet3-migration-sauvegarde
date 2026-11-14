@@ -34,3 +34,6 @@ Thumbnails/
 id_rsa*
 id_ed25519*
 *.kdbx
+
+# Énoncés du formateur : non publiés
+consignes/

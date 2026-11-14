@@ -66,7 +66,6 @@ La comparaison décisive oppose l'état **d'avant l'effacement du disque** à l'
 | **[`procedure-migration.md`](procedure-migration.md)** | **Mode opératoire réutilisable** — document autonome, applicable par un autre technicien sur un autre poste |
 | [`scripts/`](scripts/) | Les trois scripts PowerShell de l'intervention |
 | [`captures/`](captures/) | Les 20 captures d'écran de preuve |
-| [`consignes/`](consignes/) | L'énoncé fourni par le formateur |
 
 ### Scripts
 
