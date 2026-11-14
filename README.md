@@ -9,7 +9,7 @@
 
 > **En une phrase :** j'ai migré un poste de Windows 10 vers Windows 11 en sauvegardant les données de l'utilisateur, et j'ai **prouvé** par des empreintes SHA-256 calculées par mes scripts PowerShell que les 11 fichiers restaurés étaient identiques à l'octet près.
 
-Ce dépôt est écrit pour être compris **même sans rien connaître** à la migration de postes : tous les mots techniques sont expliqués.
+Ce dépôt est écrit pour être compris **même sans rien connaître** à la migration de postes : tous les mots techniques sont expliqués.<br>
 👉 Le rapport d'intervention complet est dans [`rapport-technique.md`](rapport-technique.md), et le mode opératoire réutilisable dans [`procedure-migration.md`](procedure-migration.md).
 
 > **Projet 3/5** du PPE IT Essentials, module CFC 187 *« Mettre en service un poste de travail ICT avec le système d'exploitation »*, classe E1B, Geneva Institute of Technology (GIT), septembre 2026.
